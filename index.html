@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7fc9b57457.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            background: linear-gradient(-15deg, #00cc99, teal);
+        }
+
+        .main-sec {
+            width: 60%;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        @media(max-width: 960px) {
+            .main-sec {
+                width: 70%;
+            }
+        }
+
+        .insert-sec {
+            width: 100%;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #insert {
+            width: 70%;
+            font-size: 1rem;
+            padding: 0.5rem;
+            border: 0;
+            text-indent: 15px;
+        }
+
+        #check {
+            width: 30%;
+            padding: 0.55rem;
+            font-size: 1.25rem;
+            border: 0;
+            background-color: #00cc99;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+
+        #check:hover {
+            background-color: #008899;
+        }
+
+        .output {
+            margin-top: 1rem;
+            transition: 0.3s;
+        }
+
+        .op-item {
+            background-color: white;
+            padding: 1rem;
+            font-size: 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+        }
+
+        i {
+            color: #d61e11;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        #del {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-sec">
+            <div class="insert-sec">
+                <input id="insert" type="text" placeholder="輸入待辦事項">
+                <button id="check">輸入</button>
+            </div>
+            <ul class="output">
+            </ul>
+        </div>
+    </div>
+    <script src="all.js"></script>
+</body>
+
+</html>
